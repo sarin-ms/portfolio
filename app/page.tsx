@@ -55,7 +55,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full animate-pulse opacity-20"></div>
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl dark:border-gray-700 dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-700">
                 <Image
-                  src="/avatar.png"
+                  src="/avatar.webp"
                   alt="Sarin M S"
                   width={192}
                   height={192}
@@ -85,9 +85,11 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
           >
-            <Button size="lg" className="group bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 dark:bg-gray-700 dark:hover:bg-gray-600">
-              <FaDownload className="mr-2 group-hover:animate-bounce" />
-              Download CV
+            <Button size="lg" asChild className="group bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 dark:bg-gray-700 dark:hover:bg-gray-600">
+              <a href="/SarinMsResume.pdf" download="SarinMsResume.pdf" aria-label="Download CV">
+                <FaDownload className="mr-2 group-hover:animate-bounce" />
+                Download CV
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="group px-8 py-3" asChild>
               <Link href="mailto:sarinms7@hotmail.com">
@@ -104,19 +106,19 @@ export default function Home() {
             className="flex justify-center gap-6"
           >
             <Link 
-              href="https://github.com/Sarinx7" 
+              href="https://github.com/sarin-ms" 
               className="text-gray-500 hover:text-gray-900 transition-all duration-300 hover:scale-110 dark:text-gray-400 dark:hover:text-white"
             >
               <FaGithub size={32} />
             </Link>
             <Link 
-              href="https://www.linkedin.com/in/sarinms7/" 
+              href="https://www.linkedin.com/in/sarin-ms" 
               className="text-gray-500 hover:text-blue-600 transition-all duration-300 hover:scale-110 dark:text-gray-400 dark:hover:text-blue-400"
             >
               <FaLinkedin size={32} />
             </Link>
             <Link 
-              href="#" 
+              href="https://instagram.com/sarinn.ms" 
               className="text-gray-500 hover:text-pink-600 transition-all duration-300 hover:scale-110 dark:text-gray-400 dark:hover:text-pink-400"
             >
               <FaInstagram size={32} />
