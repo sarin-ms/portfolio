@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'Snailometer - Useless Projects 2.0',
       category: 'Web development!!',
       type: 'web',
-      url: 'https://snailometer.github.io/snailometer/',
+      url: 'https://snailometer.vercel.app/',
       image: '/projects/snailometer.webp',
       description: 'Fun interactive web project'
     },
