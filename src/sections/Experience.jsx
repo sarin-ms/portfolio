@@ -51,7 +51,6 @@ const Experience = () => {
         </h2>
 
         <div className="relative">
-          {/* Timeline line - hidden on mobile, visible on large screens */}
           <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-linear-to-b from-orange-200 via-orange-300 to-orange-200 rounded-full"></div>
 
           <div className="space-y-8 sm:space-y-12 lg:space-y-20">
@@ -61,14 +60,12 @@ const Experience = () => {
                 ref={(el) => (experienceRef.current[index] = el)}
                 className="relative"
               >
-                {/* Center dot for desktop */}
                 <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-linear-to-br from-orange-400 to-orange-600 rounded-full items-center justify-center z-10 border-4 border-white shadow-xl hover:scale-110 transition-transform duration-300">
                   <div className="w-2 h-2 sm:w-3 sm:h-3 bg-white rounded-full animate-pulse"></div>
                 </div>
 
                 <div className={`lg:w-5/12 ${exp.side === 'left' ? 'lg:mr-auto lg:pr-12 xl:pr-20' : 'lg:ml-auto lg:pl-12 xl:pl-20'}`}>
                   <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group relative overflow-hidden">
-                    {/* Logo */}
                     <div className="absolute top-4 right-4 sm:top-6 sm:right-6 w-12 h-12 sm:w-16 sm:h-16 z-20">
                       <img 
                         src={exp.logo} 

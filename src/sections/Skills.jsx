@@ -72,13 +72,6 @@ const Skills = () => {
             );
           })}
         </div>
-
-        {/* Optional: Additional info */}
-        <div className="mt-12 sm:mt-16 text-center px-2">
-          <p className="text-gray-600 text-sm sm:text-base">
-            Always learning and exploring new technologies to enhance my skill set 🚀
-          </p>
-        </div>
       </div>
     </section>
   );

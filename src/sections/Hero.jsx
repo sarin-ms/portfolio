@@ -24,7 +24,6 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 sm:py-24 bg-white relative overflow-hidden">
-      {/* Decorative background blobs - smaller on mobile */}
       <div className="absolute top-20 left-5 sm:left-10 w-40 h-40 sm:w-72 sm:h-72 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-30"></div>
       <div className="absolute bottom-20 right-5 sm:right-10 w-40 h-40 sm:w-72 sm:h-72 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-30"></div>
       

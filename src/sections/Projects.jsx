@@ -68,7 +68,6 @@ const Projects = () => {
           My <span className="text-gray-900">Projects</span>
         </h2>
 
-        {/* Filter Buttons */}
         <div className="flex justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 flex-wrap px-2">
           <button
             onClick={() => setActiveFilter('all')}
@@ -102,7 +101,6 @@ const Projects = () => {
           </button>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredProjects.map((project, index) => (
             <div 
@@ -110,7 +108,6 @@ const Projects = () => {
               className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 bg-white hover:-translate-y-2"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Project Image */}
               <div className="aspect-4/3 bg-white overflow-hidden border-b border-gray-100">
                 <img 
                   src={project.image} 
@@ -120,7 +117,6 @@ const Projects = () => {
                 />
               </div>
 
-              {/* Project Info */}
               <div className="p-4 sm:p-6 bg-white">
                 <span className="text-xs sm:text-sm text-orange-500 font-semibold uppercase tracking-wide">
                   {project.category}
