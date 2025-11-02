@@ -47,7 +47,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex justify-center lg:justify-end mt-8 mr-20 lg:mt-0">
+        <div className="flex justify-center lg:justify-end mt-8 lg:mt-0 lg:mr-20">
           <div className="relative w-56 h-56 xs:w-64 xs:h-64 sm:w-72 sm:h-72 md:w-80 md:h-80">
             <div className="absolute inset-0 rounded-full bg-linear-to-b from-transparent via-orange-300/50 to-orange-500" style={{ padding: '4px' }}>
               <div className="w-full h-full rounded-full overflow-hidden bg-gray-200 shadow-2xl hover:scale-105 transition-transform duration-300">
