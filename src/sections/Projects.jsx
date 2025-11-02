@@ -62,17 +62,17 @@ const Projects = () => {
     : projects.filter(project => project.type === activeFilter);
 
   return (
-    <section className="min-h-screen px-6 py-20 bg-white">
+    <section className="min-h-screen px-4 sm:px-6 py-16 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-12 text-gray-900">
           My <span className="text-gray-900">Projects</span>
         </h2>
 
         {/* Filter Buttons */}
-        <div className="flex justify-center gap-4 mb-12 flex-wrap">
-            <button
+        <div className="flex justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 flex-wrap px-2">
+          <button
             onClick={() => setActiveFilter('all')}
-            className={`px-6 py-2 rounded-md font-medium transition-colors ${
+            className={`px-4 sm:px-6 py-2 rounded-md font-medium transition-colors text-sm sm:text-base ${
               activeFilter === 'all' 
                 ? 'bg-orange-500 text-white' 
                 : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-500'
@@ -82,7 +82,7 @@ const Projects = () => {
           </button>
           <button
             onClick={() => setActiveFilter('web')}
-            className={`px-6 py-2 rounded-md font-medium transition-colors ${
+            className={`px-4 sm:px-6 py-2 rounded-md font-medium transition-colors text-sm sm:text-base whitespace-nowrap ${
               activeFilter === 'web' 
                 ? 'bg-orange-500 text-white' 
                 : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-500'
@@ -92,7 +92,7 @@ const Projects = () => {
           </button>
           <button
             onClick={() => setActiveFilter('design')}
-            className={`px-6 py-2 rounded-md font-medium transition-colors ${
+            className={`px-4 sm:px-6 py-2 rounded-md font-medium transition-colors text-sm sm:text-base whitespace-nowrap ${
               activeFilter === 'design' 
                 ? 'bg-orange-500 text-white' 
                 : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-500'
@@ -103,7 +103,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredProjects.map((project, index) => (
             <div 
               key={project.id}
@@ -116,15 +116,16 @@ const Projects = () => {
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
 
               {/* Project Info */}
-              <div className="p-6 bg-white">
-                <span className="text-sm text-orange-500 font-semibold uppercase tracking-wide">
+              <div className="p-4 sm:p-6 bg-white">
+                <span className="text-xs sm:text-sm text-orange-500 font-semibold uppercase tracking-wide">
                   {project.category}
                 </span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 mb-3">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-2 mb-2 sm:mb-3">
                   {project.title}
                 </h3>
                 {project.url && (
@@ -132,7 +133,7 @@ const Projects = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-gray-500 hover:text-orange-500 transition-colors block truncate"
+                    className="text-xs sm:text-sm text-gray-500 hover:text-orange-500 transition-colors block truncate"
                   >
                     {project.url}
                   </a>
