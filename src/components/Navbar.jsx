@@ -31,13 +31,11 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <a href="#home" className="text-xl sm:text-2xl font-bold">
+          <a href="/" className="text-xl sm:text-2xl font-bold">
             <span className="text-orange-500">Sarin</span>
             <span className={isScrolled ? 'text-gray-900' : 'text-gray-900'}>MS</span>
           </a>
 
-          {/* Desktop Navigation */}
           <ul className="hidden md:flex space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
               <li key={link.name}>
