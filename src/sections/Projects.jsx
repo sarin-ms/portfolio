@@ -33,18 +33,18 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'GDS Team Reveal Cover',
+      title: 'GDG Team Reveal Cover',
       category: 'Poster Designing',
       type: 'design',
-      image: '/projects/reveal.webp',
+      image: '/projects/cover.webp',
       description: 'Team reveal poster design'
     },
     {
       id: 5,
-      title: 'GDS Team Reveal Individual Post',
+      title: 'GDG Team Reveal Individual Post',
       category: 'Poster Designing',
       type: 'design',
-      image: '/projects/cover.webp',
+      image: '/projects/reveal_sarin.webp',
       description: 'Individual team member post'
     },
     {
@@ -52,7 +52,7 @@ const Projects = () => {
       title: 'Cloud Study Jam Cover',
       category: 'Poster Designing',
       type: 'design',
-      image: '/projects/reveal_sarin.webp',
+      image: '/projects/reveal.webp',
       description: 'Google Cloud Study Jam poster'
     }
   ];
