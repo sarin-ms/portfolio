@@ -1,39 +1,40 @@
-import React from 'react';
-import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaFigma } from 'react-icons/fa';
-import { IoLogoJavascript } from 'react-icons/io5';
+import React from "react";
+import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaFigma } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const Skills = () => {
   const skills = [
     {
-      name: 'HTML',
+      name: "HTML",
       icon: FaHtml5,
-      color: 'from-orange-500 to-red-600'
+      color: "from-orange-500 to-red-600",
     },
     {
-      name: 'CSS',
+      name: "CSS",
       icon: FaCss3Alt,
-      color: 'from-blue-400 to-blue-600'
+      color: "from-blue-400 to-blue-600",
     },
     {
-      name: 'JavaScript',
+      name: "JavaScript",
       icon: IoLogoJavascript,
-      color: 'from-yellow-400 to-yellow-600'
+      color: "from-yellow-400 to-yellow-600",
     },
     {
-      name: 'React',
+      name: "React",
       icon: FaReact,
-      color: 'from-cyan-400 to-blue-500'
+      color: "from-cyan-400 to-blue-500",
     },
     {
-      name: 'Figma',
+      name: "Tailwind CSS",
+      icon: RiTailwindCssFill,
+      color: "from-blue-500 to-yellow-500",
+    },
+    {
+      name: "Figma",
       icon: FaFigma,
-      color: 'from-purple-400 to-pink-500'
+      color: "from-purple-400 to-pink-500",
     },
-    {
-      name: 'Python',
-      icon: FaPython,
-      color: 'from-blue-500 to-yellow-500'
-    }
   ];
 
   return (
@@ -56,17 +57,21 @@ const Skills = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 sm:hover:-translate-y-3 border border-gray-100 flex flex-col items-center justify-center aspect-square">
-                  <div className={`absolute inset-0 bg-linear-to-br ${skill.color} opacity-0 group-hover:opacity-10 rounded-xl sm:rounded-2xl transition-opacity duration-300`}></div>
-                  
+                  <div
+                    className={`absolute inset-0 bg-linear-to-br ${skill.color} opacity-0 group-hover:opacity-10 rounded-xl sm:rounded-2xl transition-opacity duration-300`}
+                  ></div>
+
                   <div className="text-4xl xs:text-5xl sm:text-6xl mb-2 sm:mb-3 group-hover:scale-110 transition-transform duration-300 text-gray-700 group-hover:text-orange-500">
                     <IconComponent />
                   </div>
-                  
+
                   <h3 className="text-sm xs:text-base sm:text-lg font-bold text-gray-900 group-hover:text-orange-500 transition-colors duration-300 text-center">
                     {skill.name}
                   </h3>
-                  
-                  <div className={`absolute inset-0 border-2 border-transparent group-hover:border-orange-500 rounded-xl sm:rounded-2xl transition-all duration-300`}></div>
+
+                  <div
+                    className={`absolute inset-0 border-2 border-transparent group-hover:border-orange-500 rounded-xl sm:rounded-2xl transition-all duration-300`}
+                  ></div>
                 </div>
               </div>
             );
