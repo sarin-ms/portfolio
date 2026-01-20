@@ -40,6 +40,15 @@ const Experience = () => {
       description: 'Designing Posters for GDG On Campus CEC events.',
       side: 'right',
       logo: '/icons/gdg.webp'
+    },
+    {
+      id: 3,
+      role: 'IEDC BOOTCAMP CEC',
+      position: 'WebManager',
+      period: 'Jan 2026 - Present',
+      description:'Developing and maintaining IEDC BOOTCAMP CEC website and event websites.',
+      side:'left',
+      logo: './icons/iedc.webp'
     }
   ];
 
