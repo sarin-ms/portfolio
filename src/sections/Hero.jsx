@@ -34,12 +34,12 @@ const Hero = () => {
             <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-2">
               <span className="text-orange-500">Sarin M S</span>
             </h1>
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
               Front End Developer
-            </h1>
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+            </h2>
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
               & Designer
-            </h1>
+            </h2>
           </div>
           
           <p className="text-gray-700 text-base sm:text-lg max-w-md mx-auto lg:mx-0 px-2 sm:px-0">
@@ -53,7 +53,7 @@ const Hero = () => {
               <div className="w-full h-full rounded-full overflow-hidden bg-gray-200 shadow-2xl hover:scale-105 transition-transform duration-300">
                 <img 
                   src="/profile.webp" 
-                  alt="Sarin M S" 
+                  alt="Sarin M S - Front End Developer and Designer" 
                   className="w-full h-full pt-6 pl-4 object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-120"
                 />
               </div>
