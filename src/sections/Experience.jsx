@@ -27,7 +27,7 @@ const Experience = () => {
       id: 1,
       role: 'IEEE SB CEC',
       position: 'Web Team',
-      period: 'May 2025 - Present',
+      period: 'May 2025 - Feb 2026',
       description: 'Maintaining IEEE SB CEC website and developing new web applications for IEEE events.',
       side: 'left',
       logo: '/icons/ieee.webp'
