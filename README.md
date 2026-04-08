@@ -4,68 +4,81 @@ My personal portfolio website showcasing my projects, skills, and experience.
 
 ## 🌐 Live Demo
 
-Visit the live site at: [sarin.is-a.dev](https://sarin.is-a.dev)
+Visit the live site at: [sarinms.dev](https://www.sarinms.dev)
 
 ## 📋 About
 
-This is my personal portfolio website built to showcase my work as a developer. The site features a clean, modern design and provides information about my skills, projects, and ways to get in touch.
+A personal portfolio website built with React and Vite to showcase my work as a front-end developer and UI/UX designer. The site features a modern, responsive design with smooth animations, structured data for SEO, and sections covering my skills, projects, experience, and contact information.
 
 ## 🚀 Features
 
-- Responsive design that works on all devices
-- Modern and clean user interface
-- Project showcase section
+- Responsive design optimized for all devices
+- Modern UI with smooth scroll progress indicator
+- Project showcase with image previews
 - Skills and technologies display
+- Experience and organizational involvement section
 - Contact information and social links
-- Fast loading and optimized performance
+- SEO optimized with Open Graph, Twitter Cards, and JSON-LD structured data
+- Sitemap and robots.txt for search engine crawlability
+- Vercel Analytics integration
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
-- Hosted on GitHub Pages via is-a.dev
+| Category       | Technology                                                |
+| -------------- | --------------------------------------------------------- |
+| **Framework**  | [React 19](https://react.dev/)                            |
+| **Build Tool** | [Vite 7](https://vite.dev/)                               |
+| **Styling**    | [Tailwind CSS v4](https://tailwindcss.com/)               |
+| **Icons**      | [React Icons](https://react-icons.github.io/react-icons/) |
+| **Analytics**  | [Vercel Analytics](https://vercel.com/analytics)          |
+| **Linting**    | [ESLint 9](https://eslint.org/)                           |
+| **Hosting**    | [Vercel](https://vercel.com/)                             |
+| **Domain**     | [sarinms.dev](https://www.sarinms.dev)                    |
 
 ## 📂 Project Structure
 
 ```
 portfolio/
-|
-├── public/               
-│   ├── icons/            # Icon assets
-│   ├── projects/         # Project images/assets
-│   └── profile.webp      # Profile picture
+│
+├── public/
+│   ├── icons/              # Favicon and organization logos
+│   │   ├── favicon.ico
+│   │   ├── gdg.webp
+│   │   ├── iedc.webp
+│   │   └── ieee.webp
+│   ├── projects/           # Project screenshot images
+│   ├── profile.webp        # Profile picture
+│   ├── robots.txt          # Search engine crawl rules
+│   ├── sitemap.xml         # Sitemap for SEO
+│   └── googlebe12e...html  # Google Search Console verification
+│
 ├── src/
-│   ├── components/       
-│   │   ├── Footer.jsx    # Footer component
-│   │   ├── Navbar.jsx    # Navigation bar
+│   ├── components/
+│   │   ├── Footer.jsx      # Footer with social links
+│   │   ├── Navbar.jsx      # Navigation bar
 │   │   └── ScrollProgress.jsx  # Scroll progress indicator
+│   ├── hooks/              # Custom React hooks
 │   ├── sections/
-│   │   ├── About.jsx     # About section
-│   │   ├── Experience.jsx # Experience section
-│   │   ├── Hero.jsx      # Hero/landing section
-│   │   ├── Projects.jsx  # Projects showcase
-│   │   └── Skills.jsx    # Skills section
-│   ├── App.jsx           # Main app component
-│   ├── index.css         # Global styles
-│   └── main.jsx          # React entry point
-├── .gitignore
-├── eslint.config.js      # ESLint configuration
-├── index.html            # HTML entry point
-├── package.json          # Project dependencies
-├── package-lock.json
-├── tailwind.config.js    # Tailwind CSS configuration
-├── vite.config.js        # Vite configuration
+│   │   ├── About.jsx       # About section
+│   │   ├── Experience.jsx  # Experience & involvement
+│   │   ├── Hero.jsx        # Hero/landing section
+│   │   ├── Projects.jsx    # Projects showcase
+│   │   └── Skills.jsx      # Skills & technologies
+│   ├── App.jsx             # Main app component
+│   ├── index.css           # Global styles
+│   └── main.jsx            # React entry point
+│
+├── index.html              # HTML entry point with SEO meta tags
+├── vite.config.js          # Vite + Tailwind CSS plugin config
+├── tailwind.config.js      # Tailwind CSS configuration
+├── eslint.config.js        # ESLint configuration
+├── package.json            # Dependencies and scripts
 └── README.md
 ```
 
-
-
 ## 🌟 Deployment
 
-This portfolio is deployed using [vercel](https://vercel.com/) and custom domain through [is-a.dev](https://is-a.dev).
-
-
+This portfolio is deployed on [Vercel](https://vercel.com/) with a custom domain via [sarinms.dev](https://www.sarinms.dev).
 
 ## 📝 License
 
@@ -73,7 +86,8 @@ All rights reserved. This portfolio is personal property and not available for r
 
 ## 🙏 Acknowledgments
 
-- Thanks to [is-a.dev](https://is-a.dev) for providing the subdomain
+- [Vercel](https://vercel.com/) for hosting
+- [React Icons](https://react-icons.github.io/react-icons/) for the icon library
 - Inspired by various portfolio designs from the developer community
 
 ---
