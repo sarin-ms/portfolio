@@ -1,95 +1,43 @@
-# Portfolio
+# sarinms.dev
 
-My personal portfolio website showcasing my projects, skills, and experience.
+[![Live Site](https://img.shields.io/badge/Live-sarinms.dev-orange?style=for-the-badge&logo=vercel)](https://www.sarinms.dev)
+[![Built with React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+[![Styled with Tailwind](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 
-## 🌐 Live Demo
+My Personal portfolio website
 
-Visit the live site at: [sarinms.dev](https://www.sarinms.dev)
+## Sections
 
-## 📋 About
+| Section        | What's There                                      |
+| -------------- | ------------------------------------------------- |
+| **Hero**       | Introduction, tagline, and call-to-action         |
+| **About**      | Background, education, and what I do              |
+| **Projects**   | Featured work with live previews and source links |
+| **Skills**     | Languages, frameworks, tools, and design software |
+| **Experience** | Roles, organizations, and community involvement   |
+| **Contact**    | Social links, email, and ways to get in touch     |
 
-A personal portfolio website built with React and Vite to showcase my work as a front-end developer and UI/UX designer. The site features a modern, responsive design with smooth animations, structured data for SEO, and sections covering my skills, projects, experience, and contact information.
+## Tech Stack
 
-## 🚀 Features
+| Layer         | Tech                                                         |
+| ------------- | ------------------------------------------------------------ |
+| **Framework** | [React 19](https://react.dev/) + [Vite 7](https://vite.dev/) |
+| **Styling**   | [Tailwind CSS v4](https://tailwindcss.com/)                  |
+| **Icons**     | [React Icons](https://react-icons.github.io/react-icons/)    |
+| **Analytics** | [Vercel Analytics](https://vercel.com/analytics)             |
+| **Hosting**   | [Vercel](https://vercel.com/) with custom domain             |
 
-- Responsive design optimized for all devices
-- Modern UI with smooth scroll progress indicator
-- Project showcase with image previews
-- Skills and technologies display
-- Experience and organizational involvement section
-- Contact information and social links
-- SEO optimized with Open Graph, Twitter Cards, and JSON-LD structured data
-- Sitemap and robots.txt for search engine crawlability
-- Vercel Analytics integration
+## Design Decisions
 
-## 🛠️ Tech Stack
+- **Clean, minimal UI** — content-first layout with deliberate whitespace and a warm orange accent palette.
+- **Performance-focused** — Vite for near-instant HMR, optimized WebP images, and no heavy UI libraries.
+- **SEO-ready** — Open Graph, Twitter Cards, JSON-LD structured data, sitemap, and robots.txt baked in.
+- **Fully responsive** — designed mobile-first, scales gracefully to any screen size.
 
-| Category       | Technology                                                |
-| -------------- | --------------------------------------------------------- |
-| **Framework**  | [React 19](https://react.dev/)                            |
-| **Build Tool** | [Vite 7](https://vite.dev/)                               |
-| **Styling**    | [Tailwind CSS v4](https://tailwindcss.com/)               |
-| **Icons**      | [React Icons](https://react-icons.github.io/react-icons/) |
-| **Analytics**  | [Vercel Analytics](https://vercel.com/analytics)          |
-| **Linting**    | [ESLint 9](https://eslint.org/)                           |
-| **Hosting**    | [Vercel](https://vercel.com/)                             |
-| **Domain**     | [sarinms.dev](https://www.sarinms.dev)                    |
-
-## 📂 Project Structure
-
-```
-portfolio/
-│
-├── public/
-│   ├── icons/              # Favicon and organization logos
-│   │   ├── favicon.ico
-│   │   ├── gdg.webp
-│   │   ├── iedc.webp
-│   │   └── ieee.webp
-│   ├── projects/           # Project screenshot images
-│   ├── profile.webp        # Profile picture
-│   ├── robots.txt          # Search engine crawl rules
-│   ├── sitemap.xml         # Sitemap for SEO
-│   └── googlebe12e...html  # Google Search Console verification
-│
-├── src/
-│   ├── components/
-│   │   ├── Footer.jsx      # Footer with social links
-│   │   ├── Navbar.jsx      # Navigation bar
-│   │   └── ScrollProgress.jsx  # Scroll progress indicator
-│   ├── hooks/              # Custom React hooks
-│   ├── sections/
-│   │   ├── About.jsx       # About section
-│   │   ├── Experience.jsx  # Experience & involvement
-│   │   ├── Hero.jsx        # Hero/landing section
-│   │   ├── Projects.jsx    # Projects showcase
-│   │   └── Skills.jsx      # Skills & technologies
-│   ├── App.jsx             # Main app component
-│   ├── index.css           # Global styles
-│   └── main.jsx            # React entry point
-│
-├── index.html              # HTML entry point with SEO meta tags
-├── vite.config.js          # Vite + Tailwind CSS plugin config
-├── tailwind.config.js      # Tailwind CSS configuration
-├── eslint.config.js        # ESLint configuration
-├── package.json            # Dependencies and scripts
-└── README.md
-```
-
-## 🌟 Deployment
-
-This portfolio is deployed on [Vercel](https://vercel.com/) with a custom domain via [sarinms.dev](https://www.sarinms.dev).
-
-## 📝 License
+## License
 
 All rights reserved. This portfolio is personal property and not available for reuse or redistribution.
 
-## 🙏 Acknowledgments
-
-- [Vercel](https://vercel.com/) for hosting
-- [React Icons](https://react-icons.github.io/react-icons/) for the icon library
-- Inspired by various portfolio designs from the developer community
-
 ---
 
-⭐ If you like this portfolio, feel free to star this repository!
+⭐ If you like the portfolio, consider starring the repo!
