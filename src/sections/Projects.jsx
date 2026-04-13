@@ -9,36 +9,36 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "ISQIP Landing Page",
-      category: "Web Development",
-      type: "web",
-      url: "https://isqip.vercel.app/",
-      image: "/projects/isqip.webp",
+      title: "Mizhi",
+      category: "App Development",
+      type: "app",
+      url: "https://github.com/sarin-ms/mizhiapp",
+      image: "/projects/mizhi.webp",
       description:
-        "A modern, responsive landing page for ISQIP — built with clean UI and smooth UX.",
-      tags: ["React", "Tailwind"],
+        "AI-powered mobile app for the visually impaired — real-time object detection (YOLOv8), TTS audio feedback, and haptics, all on-device. Built during a hackathon with Team Snakezz.",
+      tags: ["Flutter", "Dart", "YOLOv8"],
     },
     {
       id: 2,
-      title: "Snailometer",
+      title: "Ashwa '26",
       category: "Web Development",
       type: "web",
-      url: "https://snailometer.vercel.app/",
-      image: "/projects/snailometer.webp",
+      url: "https://ashwa26.vercel.app",
+      image: "/projects/ashwa.webp",
       description:
-        "A fun, interactive project for Useless Projects 2.0 — because why not measure snail speed?",
-      tags: ["HTML", "CSS", "JS"],
+        "Official website for CEC's annual sports fest with a live leaderboard powered by Google Sheets API. Served students and participants during the event.",
+      tags: ["React.js", "Tailwind CSS", "Google Sheets API"],
     },
     {
       id: 3,
-      title: "MVP Landing Page",
+      title: "Portfolio",
       category: "Web Development",
       type: "web",
-      url: "https://mvp.cecieee.org/",
-      image: "/projects/mvp.webp",
+      url: "https://sarinms.dev",
+      image: "/projects/portfolio.webp",
       description:
-        "Official event landing page for MVP by IEEE SB CEC — polished and production-ready.",
-      tags: ["React", "Tailwind"],
+        "Personal portfolio website showcasing projects, skills, and experience. Designed and built from scratch with a focus on clean UI and performance.",
+      tags: ["React.js", "Tailwind CSS"],
     },
     {
       id: 4,
@@ -104,6 +104,7 @@ const Projects = () => {
 
   const filters = [
     { key: "all", label: "All Projects" },
+    { key: "app", label: "App Development" },
     { key: "web", label: "Web Development" },
     { key: "design", label: "Graphic Design" },
   ];
@@ -183,7 +184,7 @@ const Projects = () => {
                       style={{ transitionDelay: "100ms" }}
                     >
                       <FaExternalLinkAlt className="text-xs" />
-                      Visit Live
+                      View Project
                     </a>
                   ) : (
                     <div
